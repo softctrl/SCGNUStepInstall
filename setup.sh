@@ -4,7 +4,7 @@ yum -y groupinstall "Development Tools"
 yum -y install wget ncurses* openssl* libXt* glib* libjpeg* libpng* libxml* libxslt* libtiff* libXext* gnutls* gcc-objc* libobjc*
 
 # Install FFI support
-wget -c "ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz" && tar -zxvf libffi-3.0.13.tar.gz && cd libffi-3.0.13 && ./configure --prefix=/usr/lib64 && make && make install && cd .. && rm -rvf libffi-3.0.13/
+wget -c "ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz" && tar -zxvf libffi-3.0.13.tar.gz && cd libffi-3.0.13 && ./configure && make && make install && cd .. && rm -rvf libffi-3.0.13/
 cp -Rvf /usr/local/lib64/libffi.* /usr/lib64/
 
 # Install ICU support
