@@ -7,7 +7,7 @@ yum -y install wget ncurses* openssl* libXt* glib* libjpeg* libpng* libxml* libx
 wget -c "ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz" && tar -zxvf libffi-3.0.13.tar.gz && cd libffi-3.0.13 && ./configure --prefix=/usr/include && make && make install && cd .. && rm -rvf libffi-3.0.13/ && cp -Rvf /usr/include/lib64/libffi* /usr/lib64/
 
 # Install ICU support
-wget -c "http://download.icu-project.org/files/icu4c/52rc/icu4c-52_rc2-src.tgz" && tar -zxvf icu4c-52_rc2-src.tgz && cd icu/source && ./configure && gmake && gmake install && cd ../.. && rm -rvf icu/
+wget -c "http://download.icu-project.org/files/icu4c/52rc/icu4c-52_rc2-src.tgz" && tar -zxvf icu4c-52_rc2-src.tgz && cd icu/source && ./configure && gmake && gmake install && cd ../.. && rm -rvf icu/ && cp /usr/local/lib/libicu* /usr/lib64/
 
 # Install GNUStep Startup
 wget -c "ftp://ftp.gnustep.org/pub/gnustep/core/gnustep-startup-0.32.0.tar.gz" && tar -zxvf gnustep-startup-0.32.0.tar.gz && cd gnustep-startup-0.32.0 && ./InstallGNUstep && cd .. && rm -rvf gnustep-startup-0.32.0/
