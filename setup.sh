@@ -33,4 +33,5 @@ wget -c "ftp://ftp.gnustep.org/pub/gnustep/libs/gnustep-corebase-0.1.tar.gz" && 
 echo "export GNUSTEP_MAKEFILES=/usr/GNUstep/System/Library/Makefiles" >> /etc/profile
 
 echo "Finish"
+echo "Please restart your computer."
 
