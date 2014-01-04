@@ -30,6 +30,7 @@ wget -c "ftp://ftp.gnustep.org/pub/gnustep/libs/gnustep-corebase-0.1.tar.gz" && 
 
 # Setting global variable **
 
+export GNUSTEP_MAKEFILES=/usr/GNUstep/System/Library/Makefiles
 echo "export GNUSTEP_MAKEFILES=/usr/GNUstep/System/Library/Makefiles" >> /etc/profile
 
 echo "Finish"
